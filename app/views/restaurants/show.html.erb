@@ -1,10 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @restaurant.name %>
+  <%= t('.title_html', name: @restaurant.name) %>
 </p>
-
+<p><%#= l(@restaurant.created_at, format: :short) %></p>
 <p>
   <strong>User:</strong>
   <%= @restaurant.user %>

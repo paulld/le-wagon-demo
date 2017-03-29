@@ -1,4 +1,21 @@
 class ApplicationController < ActionController::Base
+  before_action :set_locale
+
+  def set_locale
+    debugger
+    if params[:lng].in? ['fr', 'es']
+      I18n.locale = params[:lng].to_sym
+    else
+      I18n.locale = I18n.default_locale
+    end
+
+    # I18n.locale = params[:lng] || I18n.default_locale
+  end
+
+  def default_url_options
+    { locale: I18n.locale == I18n.default_locale ? nil : I18n.locale }
+  end
+
   protect_from_forgery with: :exception
   before_action :authenticate_user!
 

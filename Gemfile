@@ -10,7 +10,7 @@ gem 'devise'
 gem 'redis'
 # Gemfile
 gem "pundit"
-
+# gem 'rails-i18n', '~> 5.0.0'
 gem 'sass-rails'
 gem 'jquery-rails'
 gem 'uglifier'

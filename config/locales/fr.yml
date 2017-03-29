@@ -1,0 +1,11 @@
+fr:
+  home:
+    hello: "Bonjour tout le monde"
+    welcome: "Bienvenue!"
+  restaurants:
+    index:
+      title: "Liste des restaurants"
+    show:
+      title: 'Ce restaurant %{name} est tres bon'
+    new:
+    edit:

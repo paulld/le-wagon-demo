@@ -2,7 +2,6 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
 
   def set_locale
-    debugger
     if params[:lng].in? ['fr', 'es']
       I18n.locale = params[:lng].to_sym
     else

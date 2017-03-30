@@ -33,6 +33,7 @@ class RestaurantsController < ApplicationController
     authorize @restaurant
     @restaurant.user_id = current_user.id
     if @restaurant.save
+      # RestaurantJob.perform_later(@restaurant.id)
       redirect_to @restaurant, notice: 'Restaurant was successfully created.'
     else
       render :new

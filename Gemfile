@@ -19,6 +19,10 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
+# Gemfile
+gem 'sidekiq'
+gem 'sidekiq-failures'
+
 # Rails  Admin
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
